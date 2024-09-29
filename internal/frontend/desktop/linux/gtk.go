@@ -19,7 +19,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/unix-world/wails-app/pkg/menu"
 )
 
 func GtkMenuItemWithLabel(label string) *C.GtkWidget {

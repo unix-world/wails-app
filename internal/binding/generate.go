@@ -10,7 +10,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
+	"github.com/unix-world/wails-app/internal/fs"
 
 	"github.com/leaanthony/slicer"
 )

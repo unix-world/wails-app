@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
+	"github.com/unix-world/wails-app/internal/frontend"
 )
 
 type callMessage struct {

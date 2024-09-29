@@ -14,18 +14,18 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/wailsapp/wails/v2/pkg/assetserver"
+	"github.com/unix-world/wails-app/pkg/assetserver"
 
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop"
-	"github.com/wailsapp/wails/v2/internal/frontend/devserver"
-	"github.com/wailsapp/wails/v2/internal/frontend/dispatcher"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	pkglogger "github.com/wailsapp/wails/v2/pkg/logger"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/unix-world/wails-app/internal/binding"
+	"github.com/unix-world/wails-app/internal/frontend/desktop"
+	"github.com/unix-world/wails-app/internal/frontend/devserver"
+	"github.com/unix-world/wails-app/internal/frontend/dispatcher"
+	"github.com/unix-world/wails-app/internal/frontend/runtime"
+	"github.com/unix-world/wails-app/internal/fs"
+	"github.com/unix-world/wails-app/internal/logger"
+	"github.com/unix-world/wails-app/internal/menumanager"
+	pkglogger "github.com/unix-world/wails-app/pkg/logger"
+	"github.com/unix-world/wails-app/pkg/options"
 )
 
 func (a *App) Run() error {

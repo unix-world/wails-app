@@ -4,9 +4,9 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
-	"github.com/wailsapp/wails/v2/internal/system/operatingsystem"
-	"github.com/wailsapp/wails/v2/internal/system/packagemanager"
+	"github.com/unix-world/wails-app/internal/shell"
+	"github.com/unix-world/wails-app/internal/system/operatingsystem"
+	"github.com/unix-world/wails-app/internal/system/packagemanager"
 )
 
 var IsAppleSilicon bool

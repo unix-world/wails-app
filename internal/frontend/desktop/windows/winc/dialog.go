@@ -7,7 +7,7 @@
 
 package winc
 
-import "github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
+import "github.com/unix-world/wails-app/internal/frontend/desktop/windows/winc/w32"
 
 // Dialog displayed as z-order top window until closed.
 // It also disables parent window so it can not be clicked.

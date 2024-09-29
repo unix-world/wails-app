@@ -5,12 +5,11 @@ import (
 	"log"
 	goruntime "runtime"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/unix-world/wails-app/internal/frontend"
+	"github.com/unix-world/wails-app/internal/logger"
 )
 
-const contextError = `An invalid context was passed. This method requires the specific context given in the lifecycle hooks:
-https://wails.io/docs/reference/runtime/intro`
+const contextError = `An invalid context was passed. This method requires the specific context given in the lifecycle hooks: @ docs/reference/runtime/intro`
 
 func getFrontend(ctx context.Context) frontend.Frontend {
 	if ctx == nil {

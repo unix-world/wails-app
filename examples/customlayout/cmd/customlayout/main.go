@@ -2,8 +2,8 @@ package main
 
 import (
 	"changeme/myfrontend"
-	"github.com/wailsapp/wails/v2"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/unix-world/wails-app"
+	"github.com/unix-world/wails-app/pkg/options"
 )
 
 func main() {

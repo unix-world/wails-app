@@ -3,7 +3,7 @@ package assetserver
 import (
 	"errors"
 	"fmt"
-	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
+	"github.com/unix-world/wails-app/pkg/options/assetserver"
 	"net/http"
 	"net/http/httputil"
 	"net/url"

@@ -3,9 +3,9 @@
 package app
 
 import (
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/wv2installer"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/unix-world/wails-app/internal/logger"
+	"github.com/unix-world/wails-app/internal/wv2installer"
+	"github.com/unix-world/wails-app/pkg/options"
 )
 
 func PreflightChecks(options *options.App, logger *logger.Logger) error {

@@ -1,6 +1,6 @@
-module github.com/wailsapp/wails/v2
+module github.com/unix-world/wails-app
 
-go 1.21
+go 1.22
 
 require (
 	github.com/Masterminds/semver v1.5.0

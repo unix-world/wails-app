@@ -1,7 +1,7 @@
 package binding_test
 
 import (
-	"github.com/wailsapp/wails/v2/internal/binding/binding_test/binding_test_import"
+	"github.com/unix-world/wails-app/internal/binding/binding_test/binding_test_import"
 )
 
 type GeneratedJsEntity struct {
@@ -25,14 +25,14 @@ var GeneratedJsEntityTest = BindingTest{
 	},
 	want: `
 export namespace binding_test {
-	
+
 	export class MY_PREFIX_GeneratedJsEntity_MY_SUFFIX {
 	    name: string;
-	
+
 	    static createFrom(source: any = {}) {
 	        return new MY_PREFIX_GeneratedJsEntity_MY_SUFFIX(source);
 	    }
-	
+
 	    constructor(source: any = {}) {
 	        if ('string' === typeof source) source = JSON.parse(source);
 	        this.name = source["name"];
@@ -72,15 +72,15 @@ var GeneratedJsEntityWithNestedStructTest = BindingTest{
 	},
 	want: `
 export namespace binding_test {
-				
+
 				export class MY_PREFIX_ChildEntity_MY_SUFFIX {
 					name: string;
 					childProp: number;
-				
+
 					static createFrom(source: any = {}) {
 						return new MY_PREFIX_ChildEntity_MY_SUFFIX(source);
 					}
-				
+
 					constructor(source: any = {}) {
 						if ('string' === typeof source) source = JSON.parse(source);
 						this.name = source["name"];
@@ -91,18 +91,18 @@ export namespace binding_test {
 					name: string;
 					ref: MY_PREFIX_ChildEntity_MY_SUFFIX;
 					parentProp: string;
-				
+
 					static createFrom(source: any = {}) {
 						return new MY_PREFIX_ParentEntity_MY_SUFFIX(source);
 					}
-				
+
 					constructor(source: any = {}) {
 						if ('string' === typeof source) source = JSON.parse(source);
 						this.name = source["name"];
 						this.ref = this.convertValues(source["ref"], MY_PREFIX_ChildEntity_MY_SUFFIX);
 						this.parentProp = source["parentProp"];
 					}
-				
+
 					convertValues(a: any, classs: any, asMap: boolean = false): any {
 						if (!a) {
 							return a;
@@ -153,21 +153,21 @@ var EntityWithDiffNamespacesTest = BindingTest{
 	},
 	want: `
 export namespace binding_test {
-            	
+
             	export class MY_PREFIX_ChildPackageEntity_MY_SUFFIX {
             	    name: string;
             	    importedPackage: binding_test_import.MY_PREFIX_AWrapper_MY_SUFFIX;
-            	
+
             	    static createFrom(source: any = {}) {
             	        return new MY_PREFIX_ChildPackageEntity_MY_SUFFIX(source);
             	    }
-            	
+
             	    constructor(source: any = {}) {
             	        if ('string' === typeof source) source = JSON.parse(source);
             	        this.name = source["name"];
             	        this.importedPackage = this.convertValues(source["importedPackage"], binding_test_import.MY_PREFIX_AWrapper_MY_SUFFIX);
             	    }
-            	
+
             		convertValues(a: any, classs: any, asMap: boolean = false): any {
             		    if (!a) {
             		        return a;
@@ -189,17 +189,17 @@ export namespace binding_test {
             	export class MY_PREFIX_ParentPackageEntity_MY_SUFFIX {
             	    name: string;
             	    ref: MY_PREFIX_ChildPackageEntity_MY_SUFFIX;
-            	
+
             	    static createFrom(source: any = {}) {
             	        return new MY_PREFIX_ParentPackageEntity_MY_SUFFIX(source);
             	    }
-            	
+
             	    constructor(source: any = {}) {
             	        if ('string' === typeof source) source = JSON.parse(source);
             	        this.name = source["name"];
             	        this.ref = this.convertValues(source["ref"], MY_PREFIX_ChildPackageEntity_MY_SUFFIX);
             	    }
-            	
+
             		convertValues(a: any, classs: any, asMap: boolean = false): any {
             		    if (!a) {
             		        return a;
@@ -222,19 +222,19 @@ export namespace binding_test {
             }
 
             export namespace binding_test_import {
-            	
+
             	export class MY_PREFIX_AWrapper_MY_SUFFIX {
             	    AWrapper: binding_test_nestedimport.MY_PREFIX_A_MY_SUFFIX;
-            	
+
             	    static createFrom(source: any = {}) {
             	        return new MY_PREFIX_AWrapper_MY_SUFFIX(source);
             	    }
-            	
+
             	    constructor(source: any = {}) {
             	        if ('string' === typeof source) source = JSON.parse(source);
             	        this.AWrapper = this.convertValues(source["AWrapper"], binding_test_nestedimport.MY_PREFIX_A_MY_SUFFIX);
             	    }
-            	
+
             		convertValues(a: any, classs: any, asMap: boolean = false): any {
             		    if (!a) {
             		        return a;
@@ -257,14 +257,14 @@ export namespace binding_test {
             }
 
             export namespace binding_test_nestedimport {
-            	
+
             	export class MY_PREFIX_A_MY_SUFFIX {
             	    A: string;
-            	
+
             	    static createFrom(source: any = {}) {
             	        return new MY_PREFIX_A_MY_SUFFIX(source);
             	    }
-            	
+
             	    constructor(source: any = {}) {
             	        if ('string' === typeof source) source = JSON.parse(source);
             	        this.A = source["A"];
@@ -317,7 +317,7 @@ var GeneratedJsEntityWithIntEnumTest = BindingTest{
 		TsSuffix: "_MY_SUFFIX",
 	},
 	want: `export namespace binding_test {
-        	
+
         	export enum MY_PREFIX_IntEnum_MY_SUFFIX {
         	    Value1 = 0,
         	    Value2 = 1,
@@ -326,18 +326,18 @@ var GeneratedJsEntityWithIntEnumTest = BindingTest{
         	export class MY_PREFIX_EntityWithIntEnum_MY_SUFFIX {
         	    name: string;
         	    enum: MY_PREFIX_IntEnum_MY_SUFFIX;
-        	
+
         	    static createFrom(source: any = {}) {
         	        return new MY_PREFIX_EntityWithIntEnum_MY_SUFFIX(source);
         	    }
-        	
+
         	    constructor(source: any = {}) {
         	        if ('string' === typeof source) source = JSON.parse(source);
         	        this.name = source["name"];
         	        this.enum = source["enum"];
         	    }
         	}
-        
+
         }
 `,
 }
@@ -383,7 +383,7 @@ var GeneratedJsEntityWithStringEnumTest = BindingTest{
 		TsSuffix: "_MY_SUFFIX",
 	},
 	want: `export namespace binding_test {
-        	
+
         	export enum MY_PREFIX_StringEnum_MY_SUFFIX {
         	    Value1 = "value1",
         	    Value2 = "value2",
@@ -392,18 +392,18 @@ var GeneratedJsEntityWithStringEnumTest = BindingTest{
         	export class MY_PREFIX_EntityWithStringEnum_MY_SUFFIX {
         	    name: string;
         	    enum: MY_PREFIX_StringEnum_MY_SUFFIX;
-        	
+
         	    static createFrom(source: any = {}) {
         	        return new MY_PREFIX_EntityWithStringEnum_MY_SUFFIX(source);
         	    }
-        	
+
         	    constructor(source: any = {}) {
         	        if ('string' === typeof source) source = JSON.parse(source);
         	        this.name = source["name"];
         	        this.enum = source["enum"];
         	    }
         	}
-        
+
         }
 `,
 }
@@ -455,7 +455,7 @@ var GeneratedJsEntityWithEnumTsName = BindingTest{
 		TsSuffix: "_MY_SUFFIX",
 	},
 	want: `export namespace binding_test {
-        	
+
         	export enum MY_PREFIX_EnumWithTsName_MY_SUFFIX {
         	    TsName1 = "value1",
         	    TsName2 = "value2",
@@ -464,18 +464,18 @@ var GeneratedJsEntityWithEnumTsName = BindingTest{
         	export class MY_PREFIX_EntityWithEnumTsName_MY_SUFFIX {
         	    name: string;
         	    enum: MY_PREFIX_EnumWithTsName_MY_SUFFIX;
-        	
+
         	    static createFrom(source: any = {}) {
         	        return new MY_PREFIX_EntityWithEnumTsName_MY_SUFFIX(source);
         	    }
-        	
+
         	    constructor(source: any = {}) {
         	        if ('string' === typeof source) source = JSON.parse(source);
         	        this.name = source["name"];
         	        this.enum = source["enum"];
         	    }
         	}
-        
+
         }
 `,
 }
@@ -493,7 +493,7 @@ var GeneratedJsEntityWithNestedStructInterfacesTest = BindingTest{
 		TsOutputType: "interfaces",
 	},
 	want: `export namespace binding_test {
-        	
+
         	export interface MY_PREFIX_ChildEntity_MY_SUFFIX {
         	    name: string;
         	    childProp: number;
@@ -503,7 +503,7 @@ var GeneratedJsEntityWithNestedStructInterfacesTest = BindingTest{
         	    ref: MY_PREFIX_ChildEntity_MY_SUFFIX;
         	    parentProp: string;
         	}
-        
+
         }
 `,
 }

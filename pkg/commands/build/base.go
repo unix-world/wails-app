@@ -12,18 +12,18 @@ import (
 
 	"github.com/pterm/pterm"
 
-	"github.com/wailsapp/wails/v2/internal/system"
+	"github.com/unix-world/wails-app/internal/system"
 
 	"github.com/leaanthony/gosod"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime/wrapper"
+	"github.com/unix-world/wails-app/internal/frontend/runtime/wrapper"
 
 	"github.com/pkg/errors"
 
 	"github.com/leaanthony/slicer"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/internal/shell"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
+	"github.com/unix-world/wails-app/internal/fs"
+	"github.com/unix-world/wails-app/internal/project"
+	"github.com/unix-world/wails-app/internal/shell"
+	"github.com/unix-world/wails-app/pkg/clilogger"
 )
 
 const (

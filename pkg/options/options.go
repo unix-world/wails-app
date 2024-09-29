@@ -9,14 +9,14 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
-	"github.com/wailsapp/wails/v2/pkg/options/linux"
-	"github.com/wailsapp/wails/v2/pkg/options/mac"
-	"github.com/wailsapp/wails/v2/pkg/options/windows"
+	"github.com/unix-world/wails-app/pkg/options/assetserver"
+	"github.com/unix-world/wails-app/pkg/options/linux"
+	"github.com/unix-world/wails-app/pkg/options/mac"
+	"github.com/unix-world/wails-app/pkg/options/windows"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/unix-world/wails-app/pkg/menu"
 
-	"github.com/wailsapp/wails/v2/pkg/logger"
+	"github.com/unix-world/wails-app/pkg/logger"
 )
 
 type WindowStartState int

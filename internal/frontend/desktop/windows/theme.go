@@ -3,8 +3,8 @@
 package windows
 
 import (
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/win32"
-	"github.com/wailsapp/wails/v2/pkg/options/windows"
+	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/win32"
+	"github.com/unix-world/wails-app/pkg/options/windows"
 )
 
 func (w *Window) UpdateTheme() {

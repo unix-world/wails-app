@@ -7,14 +7,14 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/win32"
-	"github.com/wailsapp/wails/v2/internal/system/operatingsystem"
+	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/win32"
+	"github.com/unix-world/wails-app/internal/system/operatingsystem"
 
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/options"
-	winoptions "github.com/wailsapp/wails/v2/pkg/options/windows"
+	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/winc"
+	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/winc/w32"
+	"github.com/unix-world/wails-app/pkg/menu"
+	"github.com/unix-world/wails-app/pkg/options"
+	winoptions "github.com/unix-world/wails-app/pkg/options/windows"
 )
 
 type Window struct {

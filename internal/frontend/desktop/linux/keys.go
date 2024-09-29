@@ -4,7 +4,7 @@
 package linux
 
 /*
-#cgo linux pkg-config: gtk+-3.0 
+#cgo linux pkg-config: gtk+-3.0
 #cgo !webkit2_41 pkg-config: webkit2gtk-4.0
 #cgo webkit2_41 pkg-config: webkit2gtk-4.1
 
@@ -14,7 +14,7 @@ package linux
 */
 import "C"
 import (
-	"github.com/wailsapp/wails/v2/pkg/menu/keys"
+	"github.com/unix-world/wails-app/pkg/menu/keys"
 )
 
 var namedKeysToGTK = map[string]C.guint{

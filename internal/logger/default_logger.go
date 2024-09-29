@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wailsapp/wails/v2/pkg/logger"
+	"github.com/unix-world/wails-app/pkg/logger"
 )
 
 // LogLevel is an alias for the public LogLevel

@@ -7,7 +7,7 @@ import (
 
 	"github.com/leaanthony/debme"
 	"github.com/leaanthony/gosod"
-	"github.com/wailsapp/wails/v2/internal/s"
+	"github.com/unix-world/wails-app/internal/s"
 )
 
 //go:embed assets/common/*

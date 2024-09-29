@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
+	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/winc/w32"
 )
 
 // TreeItem represents an item in a TreeView widget.

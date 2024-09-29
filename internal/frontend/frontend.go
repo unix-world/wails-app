@@ -3,8 +3,8 @@ package frontend
 import (
 	"context"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/unix-world/wails-app/pkg/menu"
+	"github.com/unix-world/wails-app/pkg/options"
 )
 
 // FileFilter defines a filter for dialog boxes

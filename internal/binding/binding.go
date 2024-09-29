@@ -11,10 +11,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/typescriptify"
+	"github.com/unix-world/wails-app/internal/typescriptify"
 
 	"github.com/leaanthony/slicer"
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/unix-world/wails-app/internal/logger"
 )
 
 type Bindings struct {

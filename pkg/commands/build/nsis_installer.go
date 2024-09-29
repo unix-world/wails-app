@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/shell"
-	"github.com/wailsapp/wails/v2/internal/webview2runtime"
-	"github.com/wailsapp/wails/v2/pkg/buildassets"
+	"github.com/unix-world/wails-app/internal/fs"
+	"github.com/unix-world/wails-app/internal/shell"
+	"github.com/unix-world/wails-app/internal/webview2runtime"
+	"github.com/unix-world/wails-app/pkg/buildassets"
 )
 
 const (

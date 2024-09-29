@@ -3,11 +3,11 @@ package app
 import (
 	"context"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/unix-world/wails-app/internal/frontend"
+	"github.com/unix-world/wails-app/internal/logger"
+	"github.com/unix-world/wails-app/internal/menumanager"
+	"github.com/unix-world/wails-app/pkg/menu"
+	"github.com/unix-world/wails-app/pkg/options"
 )
 
 // App defines a Wails application structure

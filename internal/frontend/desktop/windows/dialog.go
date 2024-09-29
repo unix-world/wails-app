@@ -8,9 +8,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
-	"github.com/wailsapp/wails/v2/internal/go-common-file-dialog/cfd"
+	"github.com/unix-world/wails-app/internal/frontend"
+	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/winc/w32"
+	"github.com/unix-world/wails-app/internal/go-common-file-dialog/cfd"
 	"golang.org/x/sys/windows"
 )
 

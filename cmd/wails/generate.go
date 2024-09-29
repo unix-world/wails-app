@@ -9,14 +9,14 @@ import (
 	"github.com/leaanthony/gosod"
 	"github.com/pterm/pterm"
 	"github.com/tidwall/sjson"
-	"github.com/wailsapp/wails/v2/cmd/wails/flags"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/template"
-	"github.com/wailsapp/wails/v2/internal/colour"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
-	"github.com/wailsapp/wails/v2/pkg/commands/bindings"
-	"github.com/wailsapp/wails/v2/pkg/commands/buildtags"
+	"github.com/unix-world/wails-app/cmd/wails/flags"
+	"github.com/unix-world/wails-app/cmd/wails/internal/template"
+	"github.com/unix-world/wails-app/internal/colour"
+	"github.com/unix-world/wails-app/internal/fs"
+	"github.com/unix-world/wails-app/internal/project"
+	"github.com/unix-world/wails-app/pkg/clilogger"
+	"github.com/unix-world/wails-app/pkg/commands/bindings"
+	"github.com/unix-world/wails-app/pkg/commands/buildtags"
 )
 
 func generateModule(f *flags.GenerateModule) error {

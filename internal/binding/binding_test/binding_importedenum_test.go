@@ -1,6 +1,6 @@
 package binding_test
 
-import "github.com/wailsapp/wails/v2/internal/binding/binding_test/binding_test_import"
+import "github.com/unix-world/wails-app/internal/binding/binding_test/binding_test_import"
 
 type ImportedEnumStruct struct {
 	EnumValue binding_test_import.ImportedEnum `json:"EnumValue"`
@@ -21,30 +21,30 @@ var ImportedEnumTest = BindingTest{
 	exemptions:  nil,
 	shouldError: false,
 	want: `export namespace binding_test {
-        	
+
         	export class ImportedEnumStruct {
         	    EnumValue: binding_test_import.ImportedEnum;
-        	
+
         	    static createFrom(source: any = {}) {
         	        return new ImportedEnumStruct(source);
         	    }
-        	
+
         	    constructor(source: any = {}) {
         	        if ('string' === typeof source) source = JSON.parse(source);
         	        this.EnumValue = source["EnumValue"];
         	    }
         	}
-        
+
         }
-        
+
         export namespace binding_test_import {
-        	
+
         	export enum ImportedEnum {
         	    Value1 = "value1",
         	    Value2 = "value2",
         	    Value3 = "value3",
         	}
-        
+
         }
 `,
 }

@@ -3,10 +3,10 @@ package dispatcher
 import (
 	"context"
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/unix-world/wails-app/internal/binding"
+	"github.com/unix-world/wails-app/internal/frontend"
+	"github.com/unix-world/wails-app/internal/logger"
+	"github.com/unix-world/wails-app/pkg/options"
 )
 
 type Dispatcher struct {

@@ -4,7 +4,7 @@
 package linux
 
 /*
-#cgo linux pkg-config: gtk+-3.0 
+#cgo linux pkg-config: gtk+-3.0
 #cgo !webkit2_41 pkg-config: webkit2gtk-4.0
 #cgo webkit2_41 pkg-config: webkit2gtk-4.1
 
@@ -49,7 +49,7 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v2/internal/frontend"
+	"github.com/unix-world/wails-app/internal/frontend"
 )
 
 type Screen = frontend.Screen

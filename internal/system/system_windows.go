@@ -5,8 +5,8 @@ package system
 
 import (
 	"github.com/wailsapp/go-webview2/webviewloader"
-	"github.com/wailsapp/wails/v2/internal/system/operatingsystem"
-	"github.com/wailsapp/wails/v2/internal/system/packagemanager"
+	"github.com/unix-world/wails-app/internal/system/operatingsystem"
+	"github.com/unix-world/wails-app/internal/system/packagemanager"
 )
 
 func (i *Info) discover() error {

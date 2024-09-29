@@ -12,8 +12,8 @@ import (
 
 	"github.com/leaanthony/gosod"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/project"
+	"github.com/unix-world/wails-app/internal/fs"
+	"github.com/unix-world/wails-app/internal/project"
 )
 
 //go:embed build

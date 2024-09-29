@@ -1,8 +1,8 @@
 package build
 
 import (
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
+	"github.com/unix-world/wails-app/internal/project"
+	"github.com/unix-world/wails-app/pkg/clilogger"
 )
 
 // Builder defines a builder that can build Wails applications
