@@ -1,0 +1,3 @@
+v. 20240929
+github.com/wailsapp/wails @ 20240918 # 2.9.2
+
