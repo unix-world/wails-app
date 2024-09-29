@@ -3,7 +3,7 @@
 package windows
 
 import (
-	"github.com/wailsapp/go-webview2/pkg/edge"
+	"github.com/unix-world/go-webview2-wails/pkg/edge"
 	"sync"
 	"unsafe"
 

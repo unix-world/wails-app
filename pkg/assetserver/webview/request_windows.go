@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/wailsapp/go-webview2/pkg/edge"
+	"github.com/unix-world/go-webview2-wails/pkg/edge"
 )
 
 // NewRequest creates as new WebViewRequest for chromium. This Method must be called from the Main-Thread!

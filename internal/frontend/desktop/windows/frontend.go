@@ -19,7 +19,7 @@ import (
 	"unsafe"
 
 	"github.com/bep/debounce"
-	"github.com/wailsapp/go-webview2/pkg/edge"
+	"github.com/unix-world/go-webview2-wails/pkg/edge"
 	"github.com/unix-world/wails-app/internal/binding"
 	"github.com/unix-world/wails-app/internal/frontend"
 	"github.com/unix-world/wails-app/internal/frontend/desktop/windows/win32"

@@ -5,7 +5,7 @@ package wv2installer
 import (
 	"fmt"
 
-	"github.com/wailsapp/go-webview2/webviewloader"
+	"github.com/unix-world/go-webview2-wails/webviewloader"
 	"github.com/unix-world/wails-app/pkg/options"
 	"github.com/unix-world/wails-app/pkg/options/windows"
 )

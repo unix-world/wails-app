@@ -4,7 +4,7 @@
 package system
 
 import (
-	"github.com/wailsapp/go-webview2/webviewloader"
+	"github.com/unix-world/go-webview2-wails/webviewloader"
 	"github.com/unix-world/wails-app/internal/system/operatingsystem"
 	"github.com/unix-world/wails-app/internal/system/packagemanager"
 )
