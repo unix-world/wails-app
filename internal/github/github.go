@@ -11,6 +11,7 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/glamour"
+	styles "github.com/charmbracelet/glamour/styles"
 )
 
 func GetReleaseNotes(tagVersion string, noColour bool) string {
@@ -39,7 +40,7 @@ func GetReleaseNotes(tagVersion string, noColour bool) string {
 	var termRendererOpts []glamour.TermRendererOption
 
 	if runtime.GOOS == "windows" || noColour {
-		termRendererOpts = append(termRendererOpts, glamour.WithStyles(glamour.NoTTYStyleConfig))
+		termRendererOpts = append(termRendererOpts, glamour.WithStyles(styles.NoTTYStyleConfig))
 	} else {
 		termRendererOpts = append(termRendererOpts, glamour.WithAutoStyle())
 	}
