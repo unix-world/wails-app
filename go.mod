@@ -19,7 +19,7 @@ require (
 	github.com/jaypipes/ghw v0.13.0
 	github.com/labstack/echo/v4 v4.12.0
 	github.com/labstack/gommon v0.4.2
-	github.com/leaanthony/clir v1.7.0
+	github.com/leaanthony/clir v1.4.0
 	github.com/leaanthony/debme v1.2.1
 	github.com/leaanthony/go-ansi-parser v1.6.1
 	github.com/leaanthony/gosod v1.0.4

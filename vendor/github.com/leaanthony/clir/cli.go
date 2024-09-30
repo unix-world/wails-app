@@ -11,7 +11,6 @@ type Cli struct {
 	rootCommand    *Command
 	defaultCommand *Command
 	preRunCommand  func(*Cli) error
-	postRunCommand func(*Cli) error
 	bannerFunction func(*Cli) string
 	errorHandler   func(string, error) error
 }
@@ -71,18 +70,7 @@ func (c *Cli) Run(args ...string) error {
 	if len(args) == 0 {
 		args = os.Args[1:]
 	}
-	if err := c.rootCommand.run(args); err != nil {
-		return err
-	}
-
-	if c.postRunCommand != nil {
-		err := c.postRunCommand(c)
-		if err != nil {
-			return err
-		}
-	}
-
-	return nil
+	return c.rootCommand.run(args)
 }
 
 // DefaultCommand - Sets the given command as the command to run when
@@ -105,11 +93,6 @@ func (c *Cli) NewSubCommandInheritFlags(name, description string) *Command {
 // PreRun - Calls the given function before running the specific command.
 func (c *Cli) PreRun(callback func(*Cli) error) {
 	c.preRunCommand = callback
-}
-
-// PostRun - Calls the given function after running the specific command.
-func (c *Cli) PostRun(callback func(*Cli) error) {
-	c.postRunCommand = callback
 }
 
 // BoolFlag - Adds a boolean flag to the root command.

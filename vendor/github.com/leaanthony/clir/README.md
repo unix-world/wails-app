@@ -18,8 +18,6 @@
 
   * Nested Subcommands
   * Uses the standard library `flag` package
-  * Struct based flags
-  * Positional Args
   * Auto-generated help
   * Custom banners
   * Hidden Subcommands
@@ -32,12 +30,14 @@
 package main
 
 import (
-	"fmt"
+   "fmt"
+   "log"
 
 	"github.com/leaanthony/clir"
 )
 
 func main() {
+
 	// Create new cli
 	cli := clir.NewCli("Flags", "A simple example", "v0.0.1")
 
@@ -54,6 +54,7 @@ func main() {
 	if err := cli.Run(); err != nil {
 		fmt.Printf("Error encountered: %v\n", err)
 	}
+
 }
 ```
 
