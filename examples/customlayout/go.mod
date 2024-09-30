@@ -36,4 +36,3 @@ require (
 )
 
 replace github.com/unix-world/wails-app v0.0.0-20240929130507-06d0e132789d => ../..
-

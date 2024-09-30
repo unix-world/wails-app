@@ -49,8 +49,6 @@ github.com/unix-world/go-webview2-wails v0.0.0-20240929095409-599accbd4b53 h1:a3
 github.com/unix-world/go-webview2-wails v0.0.0-20240929095409-599accbd4b53/go.mod h1:kCf/wDV0tPpgcYNTrZrjuepB70V1qe9OrqqLjE8yBF4=
 github.com/unix-world/go-winloader-jchv v0.0.0-20240929002203-c899919cfbde h1:RnPGHpiC8o64yGjqxI05e8VgsWaI9w6qstWBonP7Gdk=
 github.com/unix-world/go-winloader-jchv v0.0.0-20240929002203-c899919cfbde/go.mod h1:qOmSUWDiiWRyrdIXSIcfSxZSGa4PbeOT7iKSWebXOfI=
-github.com/unix-world/wails-app v0.0.0-20240929130507-06d0e132789d h1:MDOUGtkGPlIIRtQ7EVTwXt4zPBAGKuMmsuUq7xBVMNY=
-github.com/unix-world/wails-app v0.0.0-20240929130507-06d0e132789d/go.mod h1:IFgdVUTi9huVkOdlx4pM8Sq0vzMifWt+pTLnfh8kRMc=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/valyala/fasttemplate v1.2.2 h1:lxLXG0uE3Qnshl9QyaK6XJxMXlQZELvChBOCmQD0Loo=
